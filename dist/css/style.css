@@ -1,0 +1,33 @@
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    background-image: linear-gradient( 
+        cadetblue 60%, #124920 120%);
+        background-size:contain;
+}
+.header{
+    color: crimson;
+    background-color: rgb(240, 221, 9);
+      background-image: linear-gradient( 
+        rgb(238, 247, 4) 100%, #a5a503 120%);
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-image-width: 2rem;
+    
+  
+
+}
+.header img{
+    width: 300px;
+}

@@ -1,18 +1,9 @@
 export class HttpStoreClass {
     url;
     constructor() {
-        this.url = '';
+        this.url = 'https://pokeapi.co/api/v2/pokemon';
     }
-    getTasks() {
-        fetch(this.url).then((resp) => {
-            console.log(resp.status);
-            return resp.json();
-        });
+    getPokemon(id) {
+        return fetch(this.url + `/${id}`).then((resp) => resp.json());
     }
-    getTask(task) {
-        fetch(this.url + `/${task.id}`);
-    }
-    setTask() { }
-    updateTask() { }
-    deleteTask() { }
 }
